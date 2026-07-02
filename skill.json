@@ -1,0 +1,50 @@
+{
+  "name": "product-bundling-strategy-skill",
+  "version": "1.0.0",
+  "description": "Generate AI-driven product bundle recommendations based on purchase co-occurrence, margin optimization, and pricing strategies.",
+  "author": "alphaparkinc",
+  "category": "merchandising",
+  "tags": [
+    "bundling",
+    "cross-sell",
+    "merchandising",
+    "pricing",
+    "e-commerce"
+  ],
+  "inputs": {
+    "products": {
+      "type": "array",
+      "description": "List of product objects with id, name, price, cost, and category."
+    },
+    "order_history": {
+      "type": "array",
+      "description": "List of orders, each with a product_ids array."
+    },
+    "bundle_size": {
+      "type": "integer",
+      "description": "Number of products per bundle.",
+      "default": 3
+    },
+    "strategy": {
+      "type": "string",
+      "enum": [
+        "margin_first",
+        "frequency_first",
+        "balanced"
+      ],
+      "description": "Bundle selection strategy."
+    }
+  },
+  "outputs": {
+    "bundles": {
+      "type": "array",
+      "description": "Recommended bundles with products, bundle price, savings, and margin."
+    },
+    "top_bundle": {
+      "type": "object",
+      "description": "Single best bundle recommendation."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
