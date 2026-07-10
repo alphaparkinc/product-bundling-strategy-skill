@@ -1,8 +1,8 @@
 {
   "name": "product-bundling-strategy-skill",
   "version": "1.0.0",
-  "description": "Generate AI-driven product bundle recommendations based on purchase co-occurrence, margin optimization, and pricing strategies.",
-  "author": "alphaparkinc",
+  "description": "GenPark AI Agent Skill - Generate AI-driven product bundle recommendations based on purchase co-occurrence, margin optimization, and pricing strategies.",
+  "author": "genpark",
   "category": "merchandising",
   "tags": [
     "bundling",
