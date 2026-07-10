@@ -1,4 +1,4 @@
-# product-bundling-strategy-skill
+# genpark-product-bundling-strategy-skill
 
 > **GenPark AI Agent Skill** — Generate AI-driven product bundle recommendations using co-occurrence analysis and margin optimization.
 
